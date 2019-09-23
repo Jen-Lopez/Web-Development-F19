@@ -1,0 +1,129 @@
+<!doctype html> 
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title> Interest Form</title>
+		<link rel = "stylesheet" href = "style.css">
+		<link href="https://fonts.googleapis.com/css?family=Livvic&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+         <header> 
+            <h1 class = "head center"> Moviewatchers</h1>
+        </header>
+        <nav class = "center">
+            <ul>
+                <li><a href = "index.html">Home</a></li>
+                <li><a href = "watched.html">Favorites</a></li>
+                <li><a href = "bucket.html">Bucket List</a></li>
+                <li><a href = "moments.html">Memorable Moments</a></li>
+                <li> <a href = "#">Interest Form</a></li>
+            </ul>
+        </nav>
+
+        <div class = "main">
+            <h1 class = "center adjust"> Getting to <span id = "know" class = "span-head">Know</span> You</h1>
+            
+            <form action="" method="get" >
+                
+                <fieldset class="center">
+                    <legend>User Information</legend>
+                    <div class="space">
+                        <label for="fname">First Name:</label>
+                        <input type="text" name="firstname" placeholder="Jane" required minlength = "2">
+                    </div>
+                    <div class="space">
+                        <label for="lname" >Last Name:</label>
+                        <input type="text" name="lastname" placeholder="Doe" required minlength = "2">
+                    </div>
+
+                    <div class="space">
+                        <label for="birthday" >Birthday:</label>
+                        <input type="date" name="bday" required>
+                    </div>
+
+                    <div class="space">
+                        <label for="email" >Email:</label>
+                        <input type="email" name="email" placeholder="JaneDoe@email.com" required >
+                    </div>
+                </fieldset>
+                
+                <fieldset class="center">
+                    <legend>Movies</legend>
+                    <div class="space">
+                        <span class = "block space">Are you a Moviewatcher?</span>
+                        <input type="radio" name="watching" value="male" checked> Yes<br>
+                        <input type="radio" name="watching" value="female"> No<br>
+                    </div>
+
+                    <div class="space">
+                        <span class = "block space">Favorite Movie Genres</span>
+                        <div id = "genres">
+                            <input type="checkbox" name="genre" value="Action"> Action <br>
+                            <input type="checkbox" name="genre" value="Adventure"> Adventure <br>
+                            <input type="checkbox" name="genre" value="Animation"> Animation <br>
+                            <input type="checkbox" name="genre" value="Comedy"> Comedy <br>
+                            <input type="checkbox" name="genre" value="Horror"> Horror <br>                    
+                            <input type="checkbox" name="genre" value="Romance"> Romance <br>
+                            <input type="checkbox" name="genre" value="scifi"> Sci-Fi <br>
+                            <input type="checkbox" name="genre" value="super"> SuperHero <br>
+                        </div>
+                    </div>
+
+                    <div class="space"> 
+                        <span class = "block">Favorite Movie Era</span>
+                        <input class="space" id = "slider" type="range" name="rangeInput" min="1900" max="2020" step="10" value = "1960" onchange = "era.value= this.value"><br>
+                        <output id = "era" for="slider" name = "era"></output>
+                        <span class = "block space">Why?</span>
+                        <textarea name = "why" placeholder="This is my favorite movie era because..." cols="30" rows="5"></textarea>
+                    </div>
+
+                    <div class="space">
+                        <label>How many movies have you watched this year?</label>
+                        <input type="number" name="luckynum" min = "0" max ="1000" value="0">
+                    </div>
+                    
+                    <div class="space">
+                        <label for="studio">Best Animation Studio</label>
+                        <select>
+                            <optgroup label="U.S.">
+                                <option value = "pixar"> Pixar </option>
+                                <option value = "disney"> Disney </option>
+                                <option value = "dreamworks"> DreamWorks </option>
+                                <option value = "cartoonnetwork"> Cartoon Network </option>
+                                <option value = "bluesky"> Blue Sky 
+                                </option>
+                                <option value = "warner"> Warner Bros</option>
+                            </optgroup>
+                            
+                            <optgroup label="Japan">
+                                <option value = "ghibli"> Studio Ghibli </option>
+                                <option value = "toei"> Toei Animation</option>
+                            </optgroup>
+                        </select>
+                    </div>
+
+                </fieldset>
+                
+                <fieldset class="center"> 
+                    <legend>Miscellaneous</legend>
+                    <div class="space">              
+                        <span class = "block space">Favorite Color</span>
+                        <input type="color" name="favcolor" value="#967bb6"><br>
+                    </div>                    
+                </fieldset>
+                
+                <div class="center">
+                    <button type="reset" value="Reset">reset</button>
+                    <button type="submit" value="Submit">submit</button>
+                </div>
+            </form>
+        </div>
+      
+		<footer> 
+			<p> &copy; 2019 Jennifer Lopez</p>
+		</footer>
+        
+    </body>
+</html>

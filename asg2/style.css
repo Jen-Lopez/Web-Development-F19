@@ -1,0 +1,295 @@
+body {
+    font-family: 'Roboto Mono', monospace;
+    background-image: linear-gradient(mistyrose,lavenderblush, white, lavenderblush,mistyrose);
+}
+
+a {
+    text-decoration: none;
+}
+
+#time, .pixel {
+    color:indianred;
+}
+.dali-heading span {
+    padding: 5px;
+    color: #9e5e5e;
+    text-shadow: 2px 2px #caaaa9;
+}
+
+.dimensions b {
+    background-color: #f5a6a6;
+    padding: 5px;
+    color: white;
+}
+
+#dali-info {
+    margin: 0 5%; 
+    text-align:justify;
+    background-color: #f1c3c7;
+    color: #826868;
+    padding: 20px;
+    border-radius: 10px
+}
+
+#dali-info a {
+    color: #dc7e8c;
+}
+
+#win, #home, #scheme {
+    color: #ffe6e4;
+    background-color: #ff8b87;
+    border-color: #fdbfbd;
+}
+
+.top-page {
+    background-color: lightcoral; 
+    position: absolute;
+    width: 100%; 
+    left: 0;
+    top: 0;
+    text-shadow: 2px 2px #ff736d;
+}
+
+.heading {
+    background-color: white;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 10px;
+    color: #ff7991;
+    box-shadow: 5px 5px #ffcbca94;
+}
+
+#nav ul li a {
+    padding:  5px;
+}
+
+header, #nav ul li a{
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+header, #color, #swap, #doc, .center, #convert, #out, #prize{
+    text-align: center;
+}
+
+#nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+a:hover {
+    text-decoration: underline;
+    
+}
+#nav ul li a:hover {
+    background-color: rosybrown;
+    text-shadow: none;
+}
+
+#nav ul li {
+    display: inline-block;
+    margin: 0px 20px;
+}
+
+button {
+    padding: 15px;
+    font-size: 1em;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+#prize, #swap,#doc, #convert {
+    margin: 20px auto;
+    padding-top: 10px;
+}
+#color {
+    margin-top: 150px;
+}
+
+#prize-pic {
+    width:200px;
+    height: 200px;
+    background-color: white;
+}
+
+#picture-box{
+    width:200px;
+    height: 200px;
+    border-radius: 5px;
+    margin: 0px auto;
+    border: 10px #ffa09e solid;
+}
+
+#items {
+    text-align: left; 
+    margin: 15px auto 0 auto; 
+    width: 270px;
+    background-color: #fdc0be;
+    border-radius: 20px;
+    padding: 15px;
+    color: whitesmoke;
+    text-shadow: 2px 2px #ffa6a3;
+}
+
+.fade-in{
+    animation: fadein 5s;
+}
+
+.fade-out {
+    animation: fadeout 3s; 
+}
+
+@keyframes fadein {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+@keyframes fadeout {
+    from {opacity: 1}
+    to {opacity: 0}
+}
+
+#swap {
+    overflow: auto;
+}
+.sub-text{
+    color:#dc5b85;
+}
+
+#p1 {
+    background-color: #ffd5dc;
+    width: 50%;
+    float: left;
+    display: inline-block;
+    clear: both;
+    margin: 10px 50px; 
+    padding: 30px;
+    color: #cc8c9a;
+}
+
+fieldset{
+    color: white;
+    background-color: #fdc3c3;
+    font-weight: bold;
+}
+
+legend {
+    background-color: #ef8a9c;
+}
+
+#p2 {
+    background-color: #f190a0;
+    width: 50%;
+    float: right;
+    clear: both;
+    display: inline-block;
+    margin: 10px 50px; 
+    padding: 30px;
+    color: white;
+}
+
+#p1:hover, #p2:hover, #img1:hover, #img2:hover, #dali:hover, #home:hover,#win:hover, #scheme:hover, .form-button:hover {
+    cursor: pointer;
+}
+button:hover {
+    opacity: .9;
+}
+
+#win:disabled{
+    opacity: .8;
+    color: darkgray;
+    background-color: #c3bebe3b;
+    border-color: #a59898;
+    cursor:default;
+}
+
+#img1, #img2, #dali, #memory{
+    width: 400px; 
+    height: 300px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+#time {
+    margin-top: 40px;
+}
+
+#time span {
+    background-color: pink;
+}
+
+#pop-up span{
+    background-color: blue;
+    padding: 5px;
+    background-color: #FFB8A7;
+    color: white;  
+}
+
+.margin {
+    margin: 15px 0;
+}
+
+#form, #output{
+    margin: 20px 5%;
+}
+
+textarea {
+    resize: none;
+    width: 200px;
+    height: 100px;
+    padding: 10px;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+input[type = "text"], input[type = "number"], textarea {
+    color:indianred;
+}
+
+.form-button {
+    width: 100px;
+    margin: 5px;
+    color: #fd8383;
+    border-color: #efcdccd9;
+    background-color: #fff0f0;
+}
+
+.new-line {
+    display: block;
+    text-align: left;
+    width: 100px;
+    margin: 0 auto;
+}
+
+@media (max-width: 900px){
+    #p1, #p2 {
+        float: none;
+        clear: none;
+        margin: 15px 0;
+        width: 80%; 
+    }
+}
+
+@media (max-width: 420px){
+    #img1, #img2, #dali, #memory{
+        width: 300px;
+    }
+    
+    #nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+    #congrats {
+        margin: 0 10px;
+    }
+    #color {
+        margin-top: 250px;
+    }
+}
+
+@media (max-width: 350px){
+    #img1, #img2, #dali, #memory{
+        width: 260px;
+    }
+}

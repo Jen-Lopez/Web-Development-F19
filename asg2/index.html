@@ -1,0 +1,122 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>JSfun</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel = "stylesheet" href = "style.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+    <div id = "nav-bar" class = "top-page">
+        <header>
+            <h1 class = "head">JS<i>fun</i></h1>
+        </header>
+        <nav id = "nav">
+            <ul>
+                <li><a href = "#color">COLOR</a></li>
+                <li> <a href="#prize">WIN</a></li>
+                <li> <a href = "#swap">SWAP</a> </li>
+                <li> <a href = "#doc">ART</a> </li>
+                <li><a href = "#convert">BMI</a> </li>
+            </ul>
+        </nav>
+        </div>
+        
+        <div id = "color">
+            <h1 class="heading"> Color Scheme</h1>
+            <div>
+                <button onclick="change()" id = "scheme"> Change Styles</button>
+            </div>
+        </div>
+        
+        <div id = "prize">
+            <h1 class="heading">Prize Machine</h1>
+            <div id = "picture-box">
+                <img id = "prize-pic" src = "images/question.gif" alt = "prize">
+            </div>
+            
+            <div id = "congrats"></div>
+            <div id = "items"></div> 
+            
+            <div class = "fade-in">
+                <button id = "win" onclick="randArray()"> Win a Prize </button>
+            </div>
+        </div>
+        
+        <div id = "swap">
+            <h1  class="heading">SWAP</h1>
+            <h2 class="sub-text"> <u>Text</u> Swap</h2>
+            <div style="overflow: auto;">
+                <p id = "p1" onclick="swapT()">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget mi proin sed libero enim sed. Viverra nam libero justo laoreet sit amet cursus. Mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor. Fames ac turpis egestas integer eget aliquet nibh praesent tristique. Ultrices tincidunt arcu non sodales neque sodales ut etiam sit. Tellus mauris a diam maecenas sed enim ut. Euismod in pellentesque massa placerat duis ultricies lacus sed. Amet commodo nulla facilisi nullam vehicula ipsum a arcu. Mauris in aliquam sem fringilla ut morbi tincidunt augue interdum.</p>
+                
+                <p id = "p2" onclick="swapT()">Ridiculus mus mauris vitae ultricies leo integer malesuada. Euismod elementum nisi quis eleifend quam. Sem fringilla ut morbi tincidunt augue interdum velit euismod. Tortor at risus viverra adipiscing at in tellus integer feugiat. Sed odio morbi quis commodo odio aenean. Facilisis sed odio morbi quis commodo odio aenean sed. Molestie nunc non blandit massa enim nec dui nunc. Scelerisque varius morbi enim nunc. Ac turpis egestas maecenas pharetra. Nibh praesent tristique magna sit amet. Aenean et tortor at risus viverra adipiscing at. Nibh venenatis cras sed felis. Elementum sagittis vitae et leo duis ut diam quam. At tempor commodo ullamcorper a lacus vestibulum sed arcu non.</p>
+            </div>
+            <h2 class="sub-text"><u>Image</u> Swap</h2>
+            <div>
+                <img id = "img1" onclick="swapI()" src = "images/dog1.jpg" alt = "Dog Picture">
+                <img id = "img2" onclick="swapI()" src = "images/dog2.jpg" alt = "Dog Picture">
+            </div>
+        </div>
+        
+        <div id = "doc">
+            <h1  class="heading" >Art</h1>
+            <div>
+                <img id = "dali" src = "images/persistence.jpg" alt = "Persistence of Memory, Salvador Dali" onclick="newDoc()"> 
+            </div>
+
+        </div>
+        
+        <div id = "convert">
+            <h1  class="heading">BMI Calculator </h1>
+            <form id = "form" onsubmit="return false">
+                <fieldset id = "form-body">
+                    <legend id = "form-legend"> User Information </legend>
+                    <div class = "margin">
+                        <label for="fname">First Name:</label>
+                        <input type="text" name="firstname" placeholder="Jane" required minlength = "2">
+                    </div>
+                    <div class = "margin">                        
+                        <label for="lname">Last Name:</label>
+                        <input type="text" name="lastname" placeholder="Doe">
+                    </div>
+                    <div class = "margin">
+                        <label for="weight">Weight:</label>
+                        <input type="number" name = "wnum" min="1" max="1000"  required>
+                        
+                        <div class = "new-line"> 
+                            <input type="radio" name = "weight" value="Kg" required> KG
+                        </div>
+                        <div class = "new-line"> 
+                            <input type="radio" name = "weight" value = "Lbs"> LBS
+                        </div>
+                    </div>
+                    <div class = "margin">
+                        <label for="height">Height:</label>
+                        <input type="number" name = "hnum" min="1" max="1000"  required>
+                        
+                        <div class = "new-line">
+                            <input type="radio" name = "height" value="cm" required> CM
+                        </div>
+                        
+                        <div class = "new-line">
+                            <input type="radio" name = "height" value = "inch" required> INCHES
+                        </div>
+                    </div>
+                    <div>
+                        <button class = "form-button" type = "submit" value="Submit" onclick="BMI()">Calculate</button>
+                        <button class = "form-button" type="reset" value="Reset">Reset</button>
+                    </div>
+                </fieldset>
+                <div id = "output">
+                    <h4 class="sub-text"><u>Result</u></h4>
+                    <textarea name = "result" placeholder="Your result will be shown here"  id = "out" disabled></textarea>
+                </div>
+            </form>
+        </div>
+        
+        <script src = "asg2.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,230 @@
+body {
+	font-family: 'Livvic', sans-serif;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    display: block;
+    top: 0;
+    left: 0;
+}
+
+.head {
+    display: block;
+    margin: auto 0px;
+    color: whitesmoke;
+    background-color: lightblue;
+    padding: 20px;
+    text-shadow: 2px 2px #b3cde0;
+}
+
+nav {
+    width: 100%;
+    top: 0;
+    position: sticky;
+    margin-top: 80px;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background-color: aliceblue;
+    padding: 10px;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav a {
+    text-decoration: none; 
+    font-weight: bolder;
+}
+
+nav a:active{
+     color:black;
+}
+nav a:link {
+    color: dimgrey;
+}
+
+nav a:visited{
+    color: darkgray;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    background-color: #72a6ca;
+    padding: 10px 0px;
+    text-align: center;
+    left: 0;
+    color: whitesmoke;
+    font-weight: bolder;
+}
+
+textarea {
+    resize: none;
+    padding: 5px;
+    font-size: 15px;
+}
+
+fieldset {
+    margin: 20px 2%;
+}
+
+.center {
+    text-align: center;
+}
+
+.block {
+    display: block;
+}
+
+img {
+    border-radius: 10px;
+}
+
+#genres {
+    width: 100px;
+    text-align: left;
+    margin: 0px auto;
+}
+
+.space {
+    margin: 10px 0px;
+}
+
+.main {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+button[type=submit], button[type=Reset] {
+    font-size: 20px;
+    color: white;
+    background-color: lightsteelblue;
+    padding: 10px;
+    border-radius: 15px;
+    width: 80px;
+    margin: 0px 5px;
+}
+
+button[type=submit]:hover, button[type=Reset]:hover {
+    cursor: pointer;
+    opacity: .9;
+}
+
+#era{
+    color: cadetblue;
+}
+
+.moviethumb {
+    width: 275px;
+    height: 200px;
+}
+
+#fav-movies section {
+    width: 40%;
+    display: inline-block;
+}
+
+.para {
+    margin: 5%;
+}
+
+.no-bottom{
+    margin-bottom: 0;
+}
+
+
+.span-head{
+    color: white;
+    padding: 5px 10px;
+}
+
+#fav,#bucket, #iconic,#know,#watcher {
+    background-color: lightskyblue;
+}
+
+#yt {
+    width:560px;
+    height:315px;
+}
+
+#card {
+    border: solid whitesmoke 5px;
+    border-radius: 10px;
+    width: auto;
+    height: auto;
+    background-color: whitesmoke;
+    padding: 20px 0px;
+    margin: 30px 2%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#home-movies {
+    width: 85%;
+}
+
+/*media queries*/
+
+@media (max-width: 576px) {
+    nav ul li {
+        font-size: 13px;
+        margin: 0px 2px;
+    }
+    
+    #yt {
+        width: auto;
+        height: 200px;
+    }
+    
+    .adjust {
+        font-size: 1.5em;
+    }
+    
+    .adjust-title {
+         font-size: 1.3em;
+    }
+
+}
+
+@media (min-width: 576px) {
+    nav ul li {
+        margin: 0px 5px;
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 768px) {
+    nav ul li {
+        margin: 0px 10px;
+        font-size: 17px;
+    }
+}
+
+@media (min-width: 992px) {
+        nav ul li {
+        margin: 0px 15px;
+    }
+}
+@media (max-width: 992px) {
+    #fav-movies section {
+        width: 100%;
+    }
+    #home-movies {
+        width: 90%;
+    }
+}
+@media (min-width: 1200px) {
+    nav ul li {
+        margin: 0px 20px;
+    }
+}
