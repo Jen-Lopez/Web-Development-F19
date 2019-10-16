@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JSFun 2</title>
+        <link rel = "stylesheet" href = "style.css">
+        <link href="https://fonts.googleapis.com/css?family=Asap&display=swap" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    </head>
+    <body>
+        <!--random image app for banner w. heading-->
+        <nav id = "navbar">
+            <h1><span class = "head">JS<i>Fun</i> 2</span></h1>
+            <ul> 
+                <li> <a href="#nyc">NYC</a></li>
+                <li> <a href="#crap">Crap Game</a></li>
+                <li> <a href="#calendar">NYU Holidays</a></li>
+            </ul>
+        </nav>
+        
+        <div class = "center" id = "nyc">
+            <div id = "slideshow">
+                <h2><span class = "heading">NYC</span> </h2>
+                <img class = "pic" src = "images/manhattan.jpeg" alt = "Image Slideshow of NYC">
+                <div  id = "caption" class="text"></div>
+            </div>
+
+            <div class = "buttons">
+                <button class = "slide-butt button" onclick="start()">Start</button>
+                <button class = "slide-butt button" onclick = "stop()">Stop</button>
+            </div>
+        </div>
+
+        
+
+        <div class = "center" id = "crap">
+            <h2> <span class = "heading">Crap Game</span></h2>
+            
+            <div id = "instructions">
+                <h3>Instructions</h3> 
+                <ul>
+                    <li><u>Win</u>: Die 1 &amp; Die 2 should sum to <b>7</b> or <b>11</b></li>
+                    <li><u>Lose</u>: Don't roll dies that sum to <b>2</b>, <b>3</b>, or <b>12</b></li>
+                </ul>
+                <p>If you got neither, keep trying to win!</p>
+            </div>
+            
+            <div id = "dice">
+                <img src=  "images/d1.png" alt="Dice">
+                <img src=  "images/d1.png" alt="Dice">
+            </div>
+            <form onsubmit="return false">
+                <p><span class = "bet">How much do you want to <b>bet</b>?</span></p>
+                <input type = "number" name="bet" min="1">
+                <p id = "show"></p>
+                <div class = "buttons">
+                    <button type = "submit" class = "button" value="Submit" onclick="crap()">Bet</button>
+                    <button type="reset" class = "button" onclick="resetDie()">Reset</button>
+                </div>
+            </form>
+        </div>
+
+        <div class = "center"  id = "calendar">
+            <h2> <span class="heading">NYU Holiday Calendar</span></h2>
+            <form onsubmit="return false">
+                <input type="date" name="holiday" min="2019-09-01" max="2020-08-31">
+                <div class = "buttons"><button class = "button" type = "submit" value="Submit" onclick="date()">Submit</button></div>
+                <div id = "cal"><img class = "pic" src = "" alt = "holiday"></div>
+                
+                <p id="out"></p>
+            </form>
+        </div>
+
+        <script src = "main.js"> </script>
+    </body>
+</html>
