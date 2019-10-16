@@ -32,12 +32,12 @@ function stop() {
     clearTimeout(slides);
 }
 
-// CRAP GAME APP 
+// CRAPS GAME APP 
 var form = document.forms[0].elements;
 var dice = ['images/d1.png','images/d2.png','images/d3.png','images/d4.png','images/d5.png','images/d6.png'];
 var textfield = document.getElementById("show");
 
-function crap(){
+function craps(){
     
     var bet_in = form[0].value; // the bet input value
     if (bet_in >= 1){

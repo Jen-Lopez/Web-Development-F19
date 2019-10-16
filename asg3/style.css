@@ -21,7 +21,7 @@ nav {
     border-radius: 5px;
 }
 
-nav ul, #crap ul{
+nav ul, #craps ul{
     list-style: none;
     padding: 0;
     text-align: center;
@@ -82,7 +82,7 @@ nav h1 {
     border: none;
 }
 
-#crap .button {
+#craps .button {
     margin: 0px 5px;
     display: inline-block;
 }
@@ -94,7 +94,7 @@ nav h1 {
     border: 10px #c39dc3 solid;
 }
 
-#nyc, #crap, #calendar {
+#nyc, #craps, #calendar {
     margin-bottom: 50px;
 }
 
