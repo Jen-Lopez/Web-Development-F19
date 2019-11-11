@@ -1,0 +1,172 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	font-family: 'Livvic', sans-serif;
+}
+
+.merch {
+	width: 250px;
+	height: 300px;
+}
+
+.product-sec {
+	margin: 50px 15%;
+	border-bottom: 2px grey solid;
+	padding: 0 20px; 
+	position:relative;
+}
+
+#checkout{
+	margin: -40px 15% 0 15%;
+	position: relative;
+}
+
+.product-box{
+	width: 250px;
+}
+
+.icon {
+	width: 20px;
+	display: inline-block;
+}
+
+#total {
+	right: 80px;
+	width: 80px;
+	height: 30px;
+	bottom: 25px;
+	position: absolute;
+	border: none;
+	border-bottom: black 2px solid;
+}
+
+.icon:hover {
+	cursor: pointer;
+	opacity: .6;
+}
+
+#check-button:hover,.info-button:hover, .keep-shopping:hover {
+	cursor: pointer;
+}
+
+#check-button:active,.info-button:active,.keep-shopping:active {
+	opacity: .8;
+}
+
+.quantity{
+	width: 45px;
+	height: 40px;
+}
+
+.sub {
+	width: 100px;
+	height: 30px;
+	margin: 5px 0;
+}
+
+#total, .sub,.quantity {
+	text-align: center;
+	font-size: 1.3em;
+}
+
+#total-head{
+	display: inline-block;
+	margin-left: 5%;
+}
+
+#check-button {
+	background-color: black;
+	color: white;
+	border-radius: 20px;
+	border: none;
+	width: auto;
+	padding: 15px;
+	height: auto;
+	font-size: 1.2em;
+	margin: 20px 0;
+}
+
+#customer-info{
+	display: none;
+	border-bottom: hidden;
+}
+
+#customer-info input {
+	border-color: lightgrey;
+	border-radius: 5px;
+	height: 35px;
+	font-size:15px;
+	padding-left: 25px;
+	color: #8a8a8a;
+}
+
+#customer-info input:focus {
+	border-color: black;
+}
+
+#customer-info legend {
+	font-size: 1.5em;
+	padding: 0px 10px;
+}
+
+.half-input {
+	width: 38%;
+	margin: 7px 5px;
+}
+
+.full-input {
+	width: 80%;
+	margin: 7px 0;
+}
+
+.info-button {
+	background-color:#90C1EF;
+	color: white;
+	border-radius: 5px;
+	width: 70px;
+	height: 30px;
+	font-size: 15px;
+	margin: 15px 5px;
+}
+
+.keep-shopping {
+	background-color: black;
+	color: white;
+	border-radius: 10px;
+	border: none;
+	width: auto;
+	padding: 15px;
+	height: auto;
+	font-size: 1.2em;
+}
+
+.doc-font{
+	font-family: 'Livvic', sans-serif;
+}
+
+@media (max-width: 800px) {
+	.product-box,.subtotal{
+		display: block;
+	}
+	.product-box {
+		margin: 0px auto;
+	}
+	#customer-info input {
+		padding-left: 5px;
+	}
+	#customer-info legend {
+		font-size: 1.2em;
+	}
+}
+@media (min-width: 800px) {
+	.product-box, .subtotal{
+		display: inline-block;
+	}
+	.subtotal{
+		width: 100px;
+		right: 75px;
+		bottom: 8px;
+		position: absolute;
+	}
+}

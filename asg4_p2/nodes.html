@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Grocery List</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=McLaren&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<header style="margin-bottom: 150px;"> 
+		<div class = "absolute-position heading">
+			<h1><span id = "head">GROCERY LIST</span></h1>
+		</div>
+	</header>
+	
+	<nav>
+		<ul id = "list">
+			<li class = "even-child">Carrots</li>
+			<li class="odd-child">Chicken</li>
+		</ul>
+	</nav>
+	<div align="center" style="margin: 25px 0;"><input id = "num" type = "number" readonly value="2"></div>
+	<div>
+		<form id = "form" align = "center"> 
+			<input class = "form-elem" id = "itemName" type="text" placeholder="Carrots"><br>
+			
+			<span class="radio"><input class = "form-elem"  type="radio" value="start" name = "insertion"> <span class = "option">Insert at Start</span></span>
+			
+			<span class="radio"><input class = "form-elem" type="radio" value="end"  name = "insertion"><span class = "option">Insert at End</span><br></span>
+			
+			<button  class = "form-elem" id = "addNode" type="button"> Add Item</button>
+		</form>
+	</div>
+	<script src="main.js"></script>
+</body>
+</html>

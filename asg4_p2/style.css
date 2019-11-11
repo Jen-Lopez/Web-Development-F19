@@ -1,0 +1,128 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+	font-family: 'McLaren', sans-serif;
+	background-color: #d1f0f0;
+}
+
+.absolute-position {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+.heading {
+	background-color: #047f7f;	
+	text-align: center;
+	color: white;
+	padding: 50px 0 10px;
+}
+
+#head {
+	border-bottom: 2px #98d2d2 dotted;
+	text-shadow: 2px 2px  #809a9a;
+}
+
+#list {
+	list-style: none;
+	padding: 0;
+}
+
+#list li {
+	padding: 20px 0 20px 30px;
+	font-size: 1.3em;
+}
+
+#addNode {
+	background-color: #bcfbfb;
+	width: 100px;
+	font-size: 1em;
+	padding: 10px;
+	border-radius: 10px;
+	color: #086f6f;
+	font-family: 'McLaren', sans-serif;
+	border: none;
+}
+
+#addNode:hover {
+	cursor: pointer;
+}
+
+#addNode:active {
+	opacity: .8;
+}
+
+#itemName {
+	width: 200px;
+	text-align: center;
+	padding: 10px;
+	border-radius: 10px;
+	color: grey;
+	font-size: 16px;
+}
+
+#itemName:focus {
+	border-color: #327575;
+}
+
+.form-elem {
+	margin: 15px 0px;
+}
+
+.radio {
+	margin: 0 10px;
+}
+
+#form {
+	background-color: #39b9b9;
+	width: 400px;
+	border-radius: 20px;
+	margin: 0px auto;
+	padding: 20px;
+}
+
+.option {
+	margin-left: 5px;
+	color: white;
+}
+.even-child {
+	color: white;
+	background-color: #77c3c3;
+	border-bottom: 2px #037f7f69 solid; 
+}
+
+.odd-child{
+	color: #357777;
+	background-color: lightblue;
+	border-bottom: 2px #79a9b7 solid; 
+}
+.even-child:hover,.odd-child:hover{
+	opacity: .8;
+}
+
+#num {
+	width: 35px;
+	height: 30px;
+	background-color: white;
+	border: none;
+	border-radius: 5px;
+	font-size: 1.5em;
+	color: #71b3b3;
+	text-shadow: 1px .5px #a2adad;
+	text-align: center;
+	box-shadow: 2px 2px 3px grey;
+}
+
+@media (max-width: 460px) {
+
+	#form {
+		width: 310px;
+	}
+}
+
+@media (max-width: 350px) {
+	#form {
+		width: 250px;
+	}
+}
