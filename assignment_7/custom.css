@@ -1,0 +1,164 @@
+.navbar {
+    height: 100px;
+}
+
+.carousel-inner { 
+    width: 500px;
+    margin: 20px 0px;
+}
+
+#shop-content {
+    margin: 50px 0;
+}
+
+.carousel-item img {
+    height: 265px;
+    width: 100%;
+}
+
+.card {
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+.card-img-top {
+    height: 250px;
+}
+
+#logo {
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.size-button {
+    margin: 10px 0;
+}
+
+.btn-group >.btn {
+    border: solid black 1px;
+}
+
+.btn-group > .active, .btn-group > .btn:hover {
+    background-color: black;
+    color: white;
+}
+
+.cart {
+    margin: 20px auto 0px;
+}
+
+.cart:hover {
+    opacity: .5;
+    cursor: pointer;
+}
+
+#exampleModalLabel, .modal-footer{
+    margin: 0px auto;    
+}
+
+.modal-header .close {
+    margin: 0;
+    padding: 0;
+}
+.modal-body,#shop-heading,#shop-content,.nav-item, .m-content,#output-total {
+    text-align: center;
+}
+
+.nav-item {
+    width: 50%;
+}
+
+.m-content {
+    margin: 20px 0;
+}
+
+#reg-form label, #login-form label {
+    margin-left: 20px;
+}
+
+.nav-modal-link:hover {
+    cursor: pointer;
+    text-decoration: underline!important;
+}
+
+#animation {
+    position: relative;
+    height: 175px;
+}
+
+#animate-pic {
+    position: absolute;
+    z-index: -1;
+}
+
+#shop-heading {
+    margin-top: 50px;
+}
+
+#reg-log {
+    display: block;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+#search-login-container {
+    margin-right: 50px;
+}
+
+#checkout-form {
+    margin: 20px;
+}
+
+#checkout-form input[type=number]::-webkit-inner-spin-button, 
+#checkout-form input[type=number]::-webkit-outer-spin-button { 
+-webkit-appearance: none; 
+margin: 0; 
+}
+
+#send-order-button {
+    margin: 10px auto;
+    display: block;
+}
+
+#output-total {
+    margin: 20px 0;
+}
+
+#total {
+    border:none;
+    border-bottom: 2px black solid;
+    text-align: center;
+    width: 100px;
+    margin-left: 10px;
+}
+
+#sum-total {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+@media (max-width: 500px) {
+    .carousel-inner{ width: 100%; margin: 0;};
+}
+
+@media (max-width: 600px){    
+    #search-login-container {
+        margin-right: 0;
+        margin: 0 auto;
+    }
+    .navbar {
+        height:200px;
+    }
+    
+    #search-login-container button {
+        margin: 0 auto;
+    }
+    #reg-log {
+        text-align: center;
+    }
+    
+    #logo {
+        width: 100%;
+        text-align: center;
+    }
+}

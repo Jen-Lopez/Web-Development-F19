@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Calculator</title>
+	<link rel="stylesheet" href="calc-style.css">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+	<h1 id = "heading"><span>Calculator</span></h1>
+	<form id = "calculator-form" action = "add.php" method="post">
+		<span>Enter first number:</span><input type="number" name="num1" required><br>
+		<span>Enter second number:</span><input type="number" name="num2" required><br>
+		<span>Choose an Operator:</span>
+
+		<select name="operator">
+			<option value="add">+</option>
+			<option value="sub">-</option>
+			<option value="mult">*</option>
+			<option value="div">/</option>
+		</select>
+		
+		<div id = "calc-buttons">
+			<button type="submit">Submit</button>
+			<button type="reset">Reset</button>
+		</div>
+	</form>
+</body>
+</html>

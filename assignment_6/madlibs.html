@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<title>Mad Libs</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="mad-style.css">
+	<link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+	<h1 id = "mad-container"><span id = "mad-heading">Mad Libs</span></h1>
+	<form id = "madlibs-form" action="madlibs.php" method="post">
+		<span class="span-outer"><span class="span-inner">Enter an Adjective:</span> </span><input type="text" required name="adj1"><br>
+		
+		<span class="span-outer"><span class="span-inner">Enter another Adjective:</span> </span><input type="text" required name="adj2"><br>
+		
+		<span class="span-outer"> <span class="span-inner">Enter an noun: </span></span><input type="text" required name="noun1"><br>
+		
+		<span class="span-outer"><span class="span-inner">Enter a verb: </span></span><input type="text" required name="verb1"><br>
+		
+		<span class="span-outer"><span class="span-inner">Enter another noun: </span></span><input type="text" required name="noun2"><br>
+		
+		<span class="span-outer"><span class="span-inner">Enter a number: </span></span><input type="number" required name="num"><br>
+		
+		<span class="span-outer"><span class="span-inner">Enter a second verb: </span></span><input type="text" required name="verb2"><br>
+		
+		<span class="span-outer"><span class="span-inner">Enter a third noun: </span></span><input type="text" required name="noun3"><br>
+		<button id = "mad-button">Generate</button>
+	</form>
+</body>
+</html>

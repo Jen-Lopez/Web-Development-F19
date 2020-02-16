@@ -1,0 +1,85 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+	font-family: 'Quicksand', sans-serif;
+	background-color: #85e4ab;
+}
+
+#heading {
+	text-align: center;
+	color: #54c180;
+	margin: 30px 0;
+	font-size: 3em;
+}
+
+#heading span {
+	background-color: #c6f7d9;
+	padding: 20px;
+}
+
+#calculator-form  {
+	text-align: center;
+	margin-top: 80px;
+}
+
+#calculator-form span {
+	display: inline-block;
+	background-color: #b6f5b9;
+	width: 170px;
+	margin: 20px 15px 0;
+	padding: 5px;
+	text-align: center;
+	border-radius: 5px;
+	color: #1d964e;
+	
+}
+
+#calc-buttons {
+	margin-top: 50px;
+}
+#calc-buttons button {
+	padding: 10px;
+	font-size: 15px;
+	border-radius: 5px;
+	margin: 0 5px;
+	font-family: 'Quicksand', sans-serif;
+	background-color: #0080009e;
+	color: white;
+	border: none;
+}	
+
+#calc-buttons button:hover {
+	cursor: pointer;
+}
+
+input {
+	width: 40px;
+	height: 30px;
+	text-align: center;
+	color:green;
+}
+
+.result {
+	text-align: center;
+}
+
+#divide {
+	width: 350px;
+	background-color: #62c38a;
+	margin: 50px auto;
+	padding: 30px;
+	border-radius: 5px;
+	color: #daffe9;
+	text-align: center;
+}
+
+.result span {
+	background-color: #62c38a;
+	color: #daffe9;
+	padding: 30px;
+}
+
+.result {
+	text-align: center;
+	margin-top: 100px;
+}

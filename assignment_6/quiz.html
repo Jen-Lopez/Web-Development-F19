@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Quiz</title>
+	<link rel="stylesheet" href="quiz-style.css">
+	<link href="https://fonts.googleapis.com/css?family=Heebo&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<h1 id="heading"><span>Quiz</span></h1>
+	<form action = "quiz.php" method = "post">
+		<div id = "names">
+			<span>First Name:</span><input type = "text" name = "first" required placeholder = "Jane"><br>
+			<span>Last Name: </span><input type = "text" name = "last" required placeholder = "Doe"><br>
+		</div>
+		<div class="question">
+			<h3><span>Q1. Which HTML element has the largest heading?</span></h3>
+			<div class="answers">
+				<input type="radio" name = "question-one" value = "0"><span>&lt;header&gt;</span><br>
+				<input type="radio" name = "question-one" value = "1"><span>&lt;head&gt;</span><br>
+				<input type="radio" name = "question-one" value = "2"><span>&lt;h1&gt;</span><br>
+				<input type="radio" name = "question-one" value = "3"><span>&lt;h6&gt;</span><br>
+			</div>
+		</div>
+		
+		<div class="question">
+			<h3><span>Q2. Which sign does Jquery use?</span></h3>
+			<div class="answers">
+				<input type="radio" name = "question-two" value = "0"><span>?</span><br>
+				<input type="radio" name = "question-two" value = "1"><span>&amp;</span><br>
+				<input type="radio" name = "question-two" value = "2"><span>#</span><br>
+				<input type="radio" name = "question-two" value = "3"><span>$</span><br>
+			</div>
+		</div>
+		
+		<div class="question">
+			<h3><span>Q3. Which is NOT a way to implement CSS?</span></h3>
+			<div class="answers" id = "implement-css">
+				<input type="radio" value = "0" name = "question-three" ><span>In-line Styling</span><br>
+				<input type="radio" value = "1" name = "question-three"><span>JS file</span><br>
+				<input type="radio" value = "2" name = "question-three"><span>&lt;style&gt; in head</span><br>
+				<input type="radio" value = "3" name = "question-three"><span>External Style Sheet</span><br>
+			</div>
+		</div>
+		
+		<div class="question">
+			<h3><span>Q4. PHP scripts need these characters:</span></h3>
+			<div id = "php" class="answers">
+				<input type="radio" value = "0" name = "question-four"><span>&lt;?php ... ?&gt;</span><br>
+				<input type="radio" value = "1" name = "question-four"><span>&lt;script&gt;</span><br>
+				<input type="radio" value = "2" name = "question-four"><span>&lt;? ... ?&gt;</span><br>
+				<input type="radio" value = "3" name = "question-four"><span>&lt;php&gt;... &lt;/php&gt;</span><br>
+			</div>
+		</div>
+
+		<div id = "submit"><button type="submit" >Submit</button></div>
+	</form>
+</body>
+</html>

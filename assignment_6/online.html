@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Online Store</title>
+	<link rel="stylesheet" href="online-style.css">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<h1 id = "heading"><span>Online Store</span></h1>
+	<form id = "online-form" action = "online.php" method = "post">
+		<span>Name: </span><input type="text" name="name" required><br>
+		<span>Email: </span><input type="email" name="email" required><br>
+		<select name= "items">
+			<option value = "cookies">Chocolate Chip Cookies</option>
+			<option value = "bar">Chocolate Bar</option>
+		</select><br>
+		<span style = "margin-right: 60px; width:50px;" required>Quantity: </span><input id = "num" type="number" name="quantity" min = "1" required>
+		<div id = "buttons">
+			<button type="submit">Submit</button>
+			<button type="reset">Reset</button>
+		</div>
+	</form>
+</body>
+</html>

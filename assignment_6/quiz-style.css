@@ -1,0 +1,92 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+	font-family: 'Heebo', sans-serif;
+	background-color: #8ecbff;
+	text-align: center;
+}
+#heading {
+	color: #0f508a;
+	margin: 30px 0;
+	font-size: 3em;
+}
+
+#heading span {
+	background-color: #0f508a14;
+	padding: 20px;
+}
+
+.question {
+	background-color: #79b5ea;
+	width: 450px;
+	margin: 50px auto;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.answers {
+	padding-bottom: 15px;
+}
+
+.answers span {
+	color:#003f77;
+	display: inline-block;
+	width: 100px;
+}
+
+.question h3 span {
+	background-color: #bddffd;
+	padding: 5px;
+	color: #1770bf;
+	border-radius: 5px;
+}
+
+#implement-css span, #php span  {
+	width: 160px;
+}
+
+#submit button {
+	padding: 10px;
+	border-radius: 5px;
+	margin: 10px 0 40px;
+	background-color: #c0e2ff;
+	border: none;
+	color: #0b2235;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+#submit button:hover {
+	cursor: pointer;
+}
+
+#names {
+	margin-top: 70px;
+}
+
+#names span {
+	display: inline-block;
+	width: 120px;
+	color: #004e94;
+	font-size: 20px;
+}
+
+input[type = "text"] {
+	color: grey;
+	text-align: center;
+}
+
+#results-content {
+	background-color: #aed9fd;
+	width:350px;
+	margin: 0 auto;
+	padding: 20px;
+	color:#2e7bc1;
+}
+
+.sub-head span {
+	background-color: #c2e0f9;
+	padding: 5px;
+	border-radius: 5px;
+}
