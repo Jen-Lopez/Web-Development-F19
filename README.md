@@ -8,4 +8,4 @@ Projects from my Web Development Class
 5. [Assignment 4B](http://i6.cims.nyu.edu/~jcl700/webdev/asg4_p2/nodes.html)
 6. [Assignment 5](http://i6.cims.nyu.edu/~jcl700/webdev/assignment_5/index.html)
 7. [Assignment 6](http://i6.cims.nyu.edu/~jcl700/webdev/assignment_6/index.html)
-8. [Assignment 7](http://i6.cims.nyu.edu/~jcl700/webdev/assignment_7/products.html)
+8. [Pawfect Online Shop](http://i6.cims.nyu.edu/~jcl700/webdev/assignment_7/products.html)
